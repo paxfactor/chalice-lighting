@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+img:hover {
+    cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<center><div><p>
+        <img alt="" src="c1.jpg" 
+            style="height: 900px; width: 1345px" id="imgClickAndChange" onclick="changeImage()"  />
+</p></div></center>
+
+<script language="javascript">
+    function changeImage() {
+
+        if (document.getElementById("imgClickAndChange").src == "c1.jpg") 
+        {
+            document.getElementById("imgClickAndChange").src = "c2.jpg";
+        }
+        else 
+        {
+            document.getElementById("imgClickAndChange").src = "c1.jpg";
+        }
+    }
+</script>
+</body></html>
